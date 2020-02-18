@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+extern float resistor_fun(float);
+
 int main(){
     float resistor, current;
     printf("Enter the current value: ");

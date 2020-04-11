@@ -1,0 +1,106 @@
+ACT1
+P1-22
+( * (+ 1 39) (- 53 45))
+(+ (/ 1020 39) (* 45 2))
+(+ 39 48 72 23 91)
+(/ (+ 39 48 72 23 91) 5.0)
+
+ACT2
+P2-25
+(* 4 (atan 1))
+(exp (inexact (/ 2 3)))
+(exp 3 4)
+(log 1000)
+
+ACT3
+P3-38
+(define (inches_to_cm inch)
+    (* inch 2.54)
+)
+(define (feet_to_inches feet)
+    (* feet 12)
+)
+(define (yards_to_feet yards)
+    (* yards 3)
+)
+(define (rods_to_yards rods)
+    (* rods 5.5)
+)
+(define (furlong_to_rods fur)
+    (* fur 40)
+)
+(define (miles_to_furlong miles)
+    (* miles 8)
+)
+(define (miles_to_cm mile)
+    (inches_to_cm
+        (feet_to_inches
+            (yards_to_feet
+                (rods_to_yards
+                    (furlong_to_rods
+                        (miles_to_furlong
+                            (miles)
+                        )
+                    )
+                )
+            )
+        )
+    )
+)
+
+ACT4
+(define (sphere-volume r)
+    ( *
+        (* (/ 4 3) 3.141592654)
+        (* r r r)
+    )
+)
+
+(define (next x)
+    (+ x 1)
+)
+
+(define (square x)
+    (* x x)
+)
+
+(define (triangle-area base height)
+    (* 0.5 base height)
+)
+
+(define (sum-of-squares x y)
+    (+ (square x) (square y))
+)
+
+
+ACT5
+(define area (radius)
+    (* radius radius (* atan 1 4))
+)
+(define volume-cylinder (radius height)
+    (* area(radius) height)
+)
+
+(define area-cylinder(radius height)
+    (+ (* 2 radius radius) (* 2 radius height atan(1) 4))
+)
+
+ACT6
+Pag 52
+a) .04
+b) .045
+c) .06
+
+Pag53
+a) 40
+b) 121
+c) 495
+
+ACT7
+Pay back for a customer who charged 2000
+- for $2000:   1.25 + 5 + 1.25 = $7.5
+- for $2600:   1.25 + 5 + 8.25 = $14.5
+
+( define (pay-back amount)
+    ()
+)

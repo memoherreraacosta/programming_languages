@@ -1,0 +1,10 @@
+(define area (radius)
+    (* radius radius (* atan 1 4))
+)
+(define volume-cylinder (radius height)
+    (* area(radius) height)
+)
+
+(define area-cylinder(radius height)
+    (+ (* 2 radius radius) (* 2 radius height atan(1) 4))
+)

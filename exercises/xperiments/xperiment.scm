@@ -122,3 +122,16 @@ cons 1 '())))))))
 > (define (square x) (* x x))
 > (expmod 2 3 5)
 3
+
+
+(define (que-tipo-de-n-es-n n)
+  (cond
+    [(not (number? n)) 'error]
+    [(integer? n) 'integer]
+    [(real? n) 'real]
+    [(rational? n) 'rational]
+    [(complex? n) 'complex]
+    [(#t 'wtf)]
+  )
+)
+

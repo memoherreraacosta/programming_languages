@@ -74,7 +74,6 @@
             [#t #f]
         )
     )
-
     (cond 
         [(or (not (integer? x)) (< x 0)) 'error]
         [(and (divisible? x 4) (not (divisible? x 100))) #t]
